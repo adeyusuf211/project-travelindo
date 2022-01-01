@@ -1,0 +1,175 @@
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-evenly;
+    padding: 0 10px;
+  }
+
+  nav ul {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 100px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav .icons a {
+    padding: 0 0.5em;
+  }
+
+  header {
+    padding: 0 10px;
+    text-align: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-start;
+  }
+
+  header h3 {
+    font-size: 1.5em;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  header button {
+    width: 150px;
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .about {
+    padding: 0;
+  }
+
+  .about h3 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .about p {
+    font-size: 1.5em;
+  }
+
+  .features {
+    padding: 40px 20px;
+  }
+
+  .features h1 {
+    font-size: 2em;
+  }
+
+  .features .featured-content {
+    margin-top: 0;
+  }
+
+  .features .featured-content .content h3 {
+    font-size: 18px;
+  }
+
+  .features .featured-content .content p {
+    font-size: 16px;
+  }
+
+  .destination h1 {
+    font-size: 2em;
+  }
+
+  .destination .destination-grid {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .destination .destination-grid h3 {
+    font-size: 2em;
+  }
+
+  .destination .destination-content {
+    padding: 0 10px;
+  }
+
+  .destination .destination-content h3 {
+    text-align: center;
+  }
+
+  .destination .destination-content .destination-grid-title {
+    flex-direction: column;
+  }
+
+  .destination .destination-content .destination-grid-title .grid {
+    justify-content: center;
+  }
+
+  .destination .destination-content .destination-grid-title .grid h1 {
+    font-size: 1.5rem;
+  }
+
+  .destination .destination-content .destination-grid-title .grid img {
+    width: 10%;
+  }
+
+  .destination .destination-content .destination-grid-title button {
+    padding: 1rem 1.5rem;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+
+  .quotes h3 {
+    font-size: 2em;
+  }
+
+  .quotes p {
+    font-size: 1.5em;
+  }
+
+  .contact .contact-content h1 {
+    font-size: 5em;
+  }
+
+  .contact .contact-content h3 {
+    font-size: 2em;
+  }
+
+  .contact button {
+    padding: 1rem 2rem;
+  }
+
+  .footer {
+    height: 50vh;
+  }
+
+  .footer .footer-content h1 {
+    font-size: 3em;
+  }
+
+  .footer .footer-content p {
+    font-size: 1.2rem;
+  }
+
+  .footer-copy p {
+    font-size: 1.2rem;
+  }
+
+  .modal-search .search {
+    width: 80vw;
+    padding: 10px;
+  }
+
+  .modal-search .search .search-form select,
+  button {
+    padding: 1rem;
+    font-size: 16px;
+  }
+
+  .modal-search .search .search-form {
+    flex-wrap: wrap;
+  }
+}
