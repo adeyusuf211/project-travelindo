@@ -211,8 +211,34 @@ header .header button:hover {
   color: var(--text-color);
 }
 
-.featues .featured-content .content h3 {
+.features .featured-content .content h3 {
   font-size: 16px;
+}
+
+.features .featured-content .content .rounded {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.lightyellow {
+  background: #f8f87d;
+}
+
+.lightpurple {
+  background: #ffb7fd;
+}
+
+.lightblue {
+  background: #b0defe;
+}
+
+.lightred {
+  background: #f9d8c1;
 }
 
 .destination {

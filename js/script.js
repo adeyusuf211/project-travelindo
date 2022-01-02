@@ -42,3 +42,20 @@ account.addEventListener('click', function(e) {
 accountClose.addEventListener('click', function() {
     accountModal.classList.remove('show');
 });
+
+// script for smooth scrolling
+const link = document.querySelectorAll("nav ul li a");
+link.forEach(l => {
+    l.addEventListener('click', clickHandler);
+});
+
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}
+// end smooth scrolling script
