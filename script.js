@@ -1,18 +1,44 @@
+// script for active links
+const links = document.querySelectorAll('nav ul li a');
+links.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        for(const link of links) {
+            link.classList.remove('active');
+        }
+        link.classList.add('active');
+    });
+});
+// end active links script
+
 const nav = document.querySelector('nav');
 
 window.addEventListener('scroll', function() {
     nav.classList.toggle('fixed', scrollY > 500)
 });
 
-const search = document.getElementById('search');
-const modalSearch = document.querySelector('.modal-search');
-const closeModal  = document.querySelector('.search-title span');
+const search        = document.getElementById('search');
+const modalSearch   = document.querySelector('.modal-search');
+const searchClose   = document.querySelector('.modal-search span');
 
 search.addEventListener('click', function(e) {
     e.preventDefault();
     modalSearch.classList.add('show');
 });
 
-closeModal.addEventListener('click', function() {
+searchClose.addEventListener('click', function() {
     modalSearch.classList.remove('show');
+});
+
+const account       = document.getElementById('account');
+const accountModal  = document.querySelector('.modal-account');
+const accountClose  = document.querySelector('.modal-account span');
+
+account.addEventListener('click', function(e) {
+    e.preventDefault();
+    accountModal.classList.add('show');
+});
+
+accountClose.addEventListener('click', function() {
+    accountModal.classList.remove('show');
 });

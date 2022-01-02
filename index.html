@@ -14,11 +14,9 @@
         <nav>
             <h1>Travelindo</h1>
             <ul>
-                <li>
-                    <a href="">Home</a>
-                    <a href="">Features</a>
-                    <a href="">Destination</a>
-                </li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Destination</a></li>
             </ul>
             <div class="icons">
                 <a href="" id="search">
@@ -28,7 +26,7 @@
                             d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
                     </svg>
                 </a>
-                <a href="">
+                <a href="" id="account">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                         <path d="M0 0h24v24H0V0z" fill="none" />
                         <path
@@ -41,11 +39,14 @@
 
     <section id="header">
         <header>
-            <h3>Get Your</h3>
-            <h1>Favorite Destination</h1>
-            <h3>in <span>Indonesia</span></h3>
-            <p>Find your favorite destination <br> right now.</p>
-            <button>FIND NOW</button>
+            <div class="header">
+                <h3>Get Your</h3>
+                <h1>Favorite Destination</h1>
+                <h3>in <span>Indonesia</span></h3>
+                <p>Find your favorite destination <br> right now.</p>
+                <button>FIND NOW</button>
+
+            </div>
         </header>
     </section>
 
@@ -431,13 +432,11 @@
         </div>
     </section>
 
-    <!-- <section id="modal-search">
+    <section id="modal-search">
         <div class="modal-search">
+            <span>x</span>
             <div class="search">
-                <div class="search-title">
-                    <h3>Search</h3>
-                    <span>x</span>
-                </div>
+                <h3>Search</h3>
                 <div class="search-form">
                    <select name="provinsi" id="provinsi">
                        <option value="">-- Pilih Provinsi  --</option>
@@ -466,7 +465,26 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+
+    <section id="modal-account">
+        <div class="modal-account">
+            <span>x</span>
+            <div class="account">
+                <h3>Login / Register</h3>
+                <div class="account-list">
+                    <div class="list">
+                        <img src="/images/google.png" alt="login with google">
+                        <h3>Google</h3>
+                    </div>
+                    <div class="list">
+                        <img src="/images/facebook.png" alt="login with facebook">
+                        <h3>Facebook</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <script src="script.js"></script>
 </body>

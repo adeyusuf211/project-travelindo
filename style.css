@@ -53,6 +53,35 @@ nav ul li a {
   padding: 0 1em;
   text-decoration: none;
   font-size: 1.2em;
+  position: relative;
+}
+
+nav ul li a.active {
+  color: black;
+  position: relative;
+}
+
+nav ul li a.active::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #e58181;
+  position: absolute;
+  top: 50%;
+  animation: before 0.5s ease-in-out;
+}
+
+@keyframes before {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+nav ul li a:hover {
+  color: #e58181;
 }
 
 nav .icons {
@@ -74,31 +103,34 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 100px;
   color: var(--text-color);
   font-family: var(--architects-font);
 }
 
-header h3 {
+header .header {
+  padding: 0 100px;
+}
+
+header .header h3 {
   font-size: 3em;
 }
 
-header h1 {
+header .header h1 {
   font-size: 5em;
 }
 
-header h3 > span {
+header .header h3 > span {
   background-color: #e58181;
   color: white;
   padding: 0 10px;
 }
 
-header p {
+header .header p {
   font-size: 2.3rem;
   margin: 20px;
 }
 
-header button {
+header .header button {
   background-color: #37718e;
   color: white;
   border: none;
@@ -113,7 +145,7 @@ header button {
   font-family: var(--architects-font);
 }
 
-header button:hover {
+header .header button:hover {
   box-shadow: 0 0 5px #76b9db;
 }
 
@@ -265,6 +297,7 @@ header button:hover {
   font-size: 18px;
   box-shadow: 0 0 20px #5fa6ca;
   transition: 0.5s ease-in;
+  position: relative;
 }
 
 .destination .destination-content .destination-grid-title button:hover {
@@ -510,26 +543,33 @@ header button:hover {
   }
 }
 
+.modal-search span {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 70px;
+  margin-top: 30px;
+  font-family: var(--poppins-font);
+  cursor: pointer;
+}
+
 .modal-search .search {
   width: 60vw;
-  height: 30vh;
+  height: 100%;
+  padding: 3em 1em;
   background-color: white;
   border-radius: 10px;
   font-family: var(--poppins-font);
   display: grid;
   place-content: center;
+  box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
 }
 
-.modal-search .search .search-title {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10px;
-  margin-bottom: 20px;
-}
-
-.modal-search .search .search-title span {
-  cursor: pointer;
-  font-size: 1rem;
+.modal-search .search h3 {
+  font-size: 1.5rem;
+  padding: 20px 10px;
 }
 
 .modal-search .search .search-form {
@@ -558,4 +598,82 @@ button {
 
 .modal-search .search .search-form button:hover {
   background-color: #5fa6ca;
+}
+
+.modal-account {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(31, 31, 31, 0.8);
+  place-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: none;
+}
+
+.modal-account.show {
+  display: grid;
+  animation: show 0.5s ease-in;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-account span {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 70px;
+  margin-top: 30px;
+  font-family: var(--poppins-font);
+  cursor: pointer;
+}
+
+.modal-account .account {
+  width: 60vw;
+  height: 100%;
+  padding: 3em 1em;
+  background-color: white;
+  border-radius: 10px;
+  font-family: var(--poppins-font);
+  box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
+}
+
+.modal-account .account h3 {
+  font-size: 1.5rem;
+  padding: 0 0.5em;
+}
+
+.modal-account .account .account-list {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.modal-account .account .account-list .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  width: 48%;
+  transition: 0.5s ease-in;
+}
+
+.modal-account .account .account-list .list:hover {
+  box-shadow: 0 0 10px rgb(196, 196, 196);
+  cursor: pointer;
+}
+
+.modal-account .account .account-list .list img {
+  width: 15%;
+  margin-right: 30px;
 }

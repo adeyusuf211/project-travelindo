@@ -23,24 +23,29 @@
     padding: 0 10px;
     text-align: center;
     align-items: center;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     justify-content: flex-start;
   }
 
-  header h3 {
+  header .header {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  header .header h3 {
     font-size: 1.5em;
   }
 
-  header h1 {
-    font-size: 2.5em;
+  header .header h1 {
+    font-size: 2.2em;
   }
 
-  header p {
-    font-size: 1rem;
+  header .header p {
+    font-size: 1.2rem;
   }
 
-  header button {
+  header .header button {
     width: 150px;
     font-size: 1rem;
     padding: 0.8rem;
@@ -156,20 +161,48 @@
 
   .footer-copy p {
     font-size: 1.2rem;
+    margin-bottom: 100px;
   }
 
   .modal-search .search {
     width: 80vw;
-    padding: 10px;
   }
 
-  .modal-search .search .search-form select,
-  button {
-    padding: 1rem;
+  .modal-search h3 {
+    margin-bottom: 20px;
+  }
+
+  .modal-search span {
+    margin-right: 40px;
+  }
+
+  .modal-search .search .search-form select {
     font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .modal-search .search .search-form button {
+    width: 100%;
   }
 
   .modal-search .search .search-form {
     flex-wrap: wrap;
+  }
+
+  .modal-account span {
+    margin-right: 40px;
+  }
+
+  .modal-account .account {
+    width: 80vw;
+  }
+
+  .modal-account .account .account-list {
+    flex-direction: column;
+  }
+
+  .modal-account .account .account-list .list {
+    width: 100%;
   }
 }
