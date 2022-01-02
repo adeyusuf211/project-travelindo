@@ -534,7 +534,7 @@ header .header button:hover {
   flex-direction: column;
   align-items: center;
   font-family: var(--poppins-font);
-  margin: 50px 0;
+  margin: 0;
 }
 
 .footer .footer-content h1 {
@@ -546,6 +546,29 @@ header .header button:hover {
   font-size: 2rem;
   font-weight: 800;
   color: var(--blue-color);
+}
+
+.footer .footer-content .footer-sosmed {
+  display: flex;
+  margin-top: 50px;
+}
+
+.footer .footer-content .footer-sosmed a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.footer .footer-content .footer-sosmed a > img {
+  width: 50px;
+  margin-right: 10px;
+  transition: 0.5s ease-in;
+}
+
+.footer .footer-content .footer-sosmed a > img:hover {
+  transform: scale(1.2) rotate(30deg);
 }
 
 .footer-copy {

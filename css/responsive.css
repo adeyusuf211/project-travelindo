@@ -158,6 +158,19 @@
 
   .footer .footer-content p {
     font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  .footer .footer-content .footer-sosmed {
+    margin-top: 0;
+  }
+
+  .footer .footer-content .footer-sosmed a {
+    padding: 5px;
+  }
+
+  .footer .footer-content .footer-sosmed a > img {
+    width: 40px;
   }
 
   .footer-copy p {
