@@ -60,3 +60,15 @@ function clickHandler(e) {
   });
 }
 // end smooth scrolling script
+
+// Script for auto updating a year in footer
+const getTahunCopyright = (copyright) => {
+    const year = new Date().getFullYear();
+    return `Created By ${copyright} @ ${year}`;
+}
+
+const footerCopy = document.querySelector('.footer-copy p');
+const content    = `<a href="https://www.instagram.com/adeyusuf.official" target="_blank">Ade Yusuf</a>`;
+
+footerCopy.innerHTML = getTahunCopyright(content);
+// End auto updating year in footer script
