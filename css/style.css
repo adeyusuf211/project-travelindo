@@ -149,7 +149,7 @@ header .header h3 > span {
 
 header .header p {
   font-size: 2.3rem;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 header .header button {
