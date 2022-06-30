@@ -4,3 +4,7 @@ Ini adalah sebuah desain website untuk sebuah platform travel yang bernama _trav
 `html`
 `css`
 `javascript`
+
+## Tampilan Website
+
+![travelindo](travelindo.png)
